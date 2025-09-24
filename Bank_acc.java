@@ -8,6 +8,10 @@ class Bank{
 
     void deposit(double amount)
     {
+        if(balance < 0){
+            balance = 0;
+        }
+        
         balance += amount;
     }
 
